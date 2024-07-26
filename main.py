@@ -1,12 +1,13 @@
 import requests
 import streamlit as st
 from datetime import datetime
-from dotenv import load_dotenv
-import os
+# from dotenv import load_dotenv
+# import os
 
-# # Get credentials from .env
+# # Get credentials from .env  //  for streamlit sharing, the api_key variable is set there directly
 # load_dotenv()
 # api_key = os.getenv('API_KEY')
+api_key = st.secrets["api_key"]
 
 # Get the JSON for Astronomy Picture of the Day
 url = f"https://api.nasa.gov/planetary/apod?api_key={api_key}"
