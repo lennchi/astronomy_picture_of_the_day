@@ -4,9 +4,9 @@ from datetime import datetime
 from dotenv import load_dotenv
 import os
 
-# Get credentials from .env
-load_dotenv()
-api_key = os.getenv('API_KEY')
+# # Get credentials from .env
+# load_dotenv()
+# api_key = os.getenv('API_KEY')
 
 # Get the JSON for Astronomy Picture of the Day
 url = f"https://api.nasa.gov/planetary/apod?api_key={api_key}"
